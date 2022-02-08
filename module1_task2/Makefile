@@ -7,5 +7,5 @@ post:		## Makes a new post on hugo site
 	@sed -i 's/title.*/title: \"$(POSTTITLE)\"/g' $(PWD)/content/posts/$(POSTNAME)
 clean:		## Deletes all files in the /dist directory
 	@rm -rf ./dist/
-help: 
+help:		## Displays help information for make file 
 	@echo "build: Builds hugo website\npost: Makes new post on site. Usage: make POST_NAME=[name of post here] and POST_TITLE=[title of post here] post\nclean: Removes files in /dist directory\nhelp: Show this help usage"
