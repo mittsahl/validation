@@ -11,6 +11,5 @@ jobs:
          - run: |
               git clone https://github.com/mittsahl/validation
          - run: |
-              cd validation/module3_task0
-         - run:
-              pwd
+              cd validation/module3_task0/
+              make help
