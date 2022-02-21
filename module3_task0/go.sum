@@ -1,0 +1,4 @@
+github.com/gorilla/mux v1.8.0 h1:i40aqfkR1h2SlN9hojwV5ZA91wcXFOvkdNIeFDP5koI=
+github.com/gorilla/mux v1.8.0/go.mod h1:DVbg23sWSpFRCP0SfiEN6jmj59UnW/n46BH5rLB71So=
+github.com/theNewDynamic/gohugo-theme-ananke v0.0.0-20220202184205-87f97e55bbab h1:WACgjVfgkUVzLU+XFuE3Vh+PM0RKK6mTZxI3Q1HNr+M=
+github.com/theNewDynamic/gohugo-theme-ananke v0.0.0-20220202184205-87f97e55bbab/go.mod h1:bgj7bjD98mZSR/KOYKuF5lcIgEmTnJ763rZH4EseLv4=
