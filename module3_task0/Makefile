@@ -41,5 +41,6 @@ clean:		## Deletes all files in the /dist directory
 	-make stop
 	-rm -rf ./dist/
 	-rm awesome*
+	-rm *.out
 help:		## Displays help information for make file 
 	@echo "build: Builds hugo website and api\nrun: runs api in background\nstop: kills applicationpost: Makes new post on site. Usage: make POST_NAME=[name of post here] and POST_TITLE=[title of post here] post\nclean: Removes files in /dist directory, error logs, and binary executable\nvalidate: valdiates html code in ./dist/index.html\ncheck: checks to see if there are any dead link in /content/posts/ markdown files\nhelp: Show this help usage"
