@@ -7,6 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:   
       - run: |
-          git clone https://github.com/mittsahl/validation
-          cd module3_task0
-          make help
+          which make
