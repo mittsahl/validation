@@ -10,3 +10,4 @@ jobs:
       steps:
          - run: |
             which make
+            ls ${{ github.workspace }}
