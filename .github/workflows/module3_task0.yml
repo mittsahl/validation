@@ -13,4 +13,4 @@ jobs:
          - run: |
               cd validation/module3_task0
          - run:
-              make help
+              pwd
