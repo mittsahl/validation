@@ -12,5 +12,7 @@ Delete logs, test reports, distribution director, and stops application using
 ```
 make clean
 ```
-y
 
+## Workflow
+
+Github actions runs make help in this directory every day and after every push
