@@ -9,5 +9,6 @@ jobs:
       runs-on: ubuntu-latest
       steps:
          - run: |
-            which make
-            ls ${{ github.workspace }}
+              cd ./module3_task0
+         - run: |
+              pwd
