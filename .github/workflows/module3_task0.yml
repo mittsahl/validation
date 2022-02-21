@@ -11,6 +11,6 @@ jobs:
          - run: |
               git clone https://github.com/mittsahl/validation
          - run: |
-              cd ./module3_task0
+              cd validation/module3_task0
          - run:
               make help
