@@ -1,8 +1,9 @@
 ---
 name: Module Three Task Zero
-on: [push]
-schedule:
-   - cron: "0 0 * * *"
+on:
+   push:
+   schedule:
+      - cron: '0 0 * * *'
 jobs:
    Explore-GitHub-Actions:
       runs-on: ubuntu-latest
