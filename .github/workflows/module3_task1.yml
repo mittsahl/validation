@@ -10,5 +10,7 @@ jobs:
       steps:
          - run: |
               git clone https://github.com/mittsahl/validation
+         - run: |
               cd validation/module3_task1
+         - run: |
               ./setup.sh
