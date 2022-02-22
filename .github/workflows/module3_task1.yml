@@ -13,4 +13,6 @@ jobs:
          - run: |
               cd validation/module3_task1
          - run: |
-              ./setup.sh
+              brew install hugo
+         - run: |
+              make build
