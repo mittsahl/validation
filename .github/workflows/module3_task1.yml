@@ -11,6 +11,8 @@ jobs:
          - run: |
               git clone https://github.com/mittsahl/validation
          - run: |
+              brew install hugo         
+         - run: |
               cd validation/module3_task1
-              ./setup.sh
               make build
+              
