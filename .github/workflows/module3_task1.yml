@@ -9,5 +9,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
          - run: |
-              which brew
-
+              brew install hugo
+              git clone https://github.com/mittsahl/validation
+              cd validation/module3_task1
+              make build
