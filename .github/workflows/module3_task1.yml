@@ -1,5 +1,5 @@
 ---
-name: Module Three Task Zero
+name: Module Three Task One
 on:
    push:
    schedule:
@@ -9,5 +9,5 @@ jobs:
       runs-on: ubuntu-latest
       steps:
          - run: |
-              which hugo
+              which brew
 
