@@ -17,9 +17,7 @@ jobs:
          - run: |
               cd validation/module3_task2
               make build
-              mkdir awesome-website
-              mv awesome-api ./awesome-website
-              mv ./dist ./awesome-website
+              make package
          - name: Archive artifacts
            uses: actions/upload-artifact@v2
            with:
