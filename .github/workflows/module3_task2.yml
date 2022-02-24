@@ -1,5 +1,5 @@
 ---
-name: Module Three Task One
+name: Module Three Task Two
 on:
    push:
    schedule:
@@ -22,4 +22,4 @@ jobs:
            uses: actions/upload-artifact@v2
            with:
              path: |
-               awesome-website           
+               validation/module3_task2/awesome-website           
