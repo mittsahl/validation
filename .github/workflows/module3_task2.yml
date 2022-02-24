@@ -17,7 +17,7 @@ jobs:
               make build
               mkdir awesome-website
               mv awesome-api ./awesome-website
-              mv ./dist ./awesome-api
+              mv ./dist ./awesome-website
          - name: Archive artifacts
            uses: actions/upload-artifact@v2
            with:
