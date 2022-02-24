@@ -1,0 +1,25 @@
+---
+name: Module Three Task One
+on:
+   push:
+   schedule:
+      - cron: '0 0 * * *'
+jobs:
+   Explore-GitHub-Actions:
+      runs-on: ubuntu-latest
+      steps:
+         - run: |
+              git clone https://github.com/mittsahl/validation
+         - run: |
+              brew install hugo         
+         - run: |
+              cd validation/module3_task2
+              make build
+              mkdir awesome-website
+              mv awesome-api ./awesome-website
+              mv ./dist ./awesome-api
+         - name: Archive artifacts
+           uses: actions/upload-artifact@v2
+           with:
+             path: |
+               awesome-website           
