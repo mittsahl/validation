@@ -12,6 +12,10 @@ Delete logs, test reports, distribution director, and stops application using
 ```
 make clean
 ```
+To package neccessary parts for application for github artifact use
+```
+make package
+```
 
 ## Workflow
 
