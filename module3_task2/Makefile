@@ -31,7 +31,6 @@ integration-tests:  ## Runs integration tests on application
 test:		## Runs unit tests and integration tests on application
 	@make unit-tests
 	@make integration-tests
-	@make validate
 validate:	## validates formatting of html
 	-w3c_validator.py ./dist/index.html
 post:		## Makes a new post on hugo site
