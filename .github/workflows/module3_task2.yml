@@ -22,4 +22,4 @@ jobs:
            uses: actions/upload-artifact@v2
            with:
              path: |
-               validation/module3_task2/awesome-website           
+               validation/module3_task2/awesome-website.zip           
