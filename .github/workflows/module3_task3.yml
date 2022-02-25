@@ -28,6 +28,6 @@ jobs:
               ls
            if: startsWith(github.ref, 'refs/tags/')
            with:
-            files:
-              ./module3_task3/awesome-website.zip
-              ./module3_task3/DEPLOY.md         
+            files: |
+              DEPLOY.md
+              awesome-website.zip
