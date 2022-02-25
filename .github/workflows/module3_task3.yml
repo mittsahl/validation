@@ -26,5 +26,5 @@ jobs:
            if: startsWith(github.ref, 'refs/tags/')
            with:
             files:
-              validation/module3_task3/awesome-website.zip
-              validation/module3_task3/DEPLOY.md         
+              awesome-website.zip
+              DEPLOY.md         
