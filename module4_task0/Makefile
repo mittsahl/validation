@@ -9,7 +9,7 @@ lint:		## Runs code through checker
 	-markdownlint DEPLOY.md
 	-markdownlint README.md
 go-build:	## Build go api
-	@go build
+	@./docker_build.sh
 hugo-build:	## Builds hugo site
 	@hugo
 build:		## Builds hugo website and api
@@ -27,9 +27,9 @@ check:		## Checks markdown files and dead links
 	@markdownlint ./content/posts/*
 	@markdown-link-check ./content/posts/*
 unit-tests:	## Runs unit tests on application
-	@go test -v -short -coverprofile=coverage-units.out
+	@docker run golang:1.15.8-buster go test -v -short -coverprofile=coverage-units.out
 integration-tests:  ## Runs integration tests on application
-	@go test -tags=integration ./main_intetgration_test.go ./main.go -v -coverprofile=coverage-intergrations.out
+	@docker run golang:1.15.8-buster go test -tags=integration ./main_intetgration_test.go ./main.go -v -coverprofile=coverage-intergrations.out
 test:		## Runs unit tests and integration tests on application
 	@make unit-tests
 	@make integration-tests
