@@ -1,0 +1,13 @@
+all: 
+  hosts:
+    ec2-3-139-239-155.us-east-2.compute.amazonaws.com:
+  children:
+    webservers:
+      hosts:
+        ec2-3-139-239-155.us-east-2.compute.amazonaws.com:
+    jenkins:
+      hosts:
+        ec2-3-139-239-155.us-east-2.compute.amazonaws.com:
+    production:
+      hosts:
+        ec2-3-139-239-155.us-east-2.compute.amazonaws.com:
